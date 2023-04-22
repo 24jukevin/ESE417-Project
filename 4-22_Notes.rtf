@@ -1,0 +1,168 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 High test accuracy \
+\
+\
+\
+\'93 
+\f1\fs28 \cb2 \expnd0\expndtw0\kerning0
+The hidden node size is 158\
+\pard\pardeftab720\partightenfactor0
+\cf0 The hidden layer size is 4\
+Accuracy train is 0.9133154602323503\
+Accuracy test is 0.6458333333333334\'94\
+\
+High train accuracy \
+\
+\'93The hidden node size is 156\
+The hidden layer size is 5\
+Accuracy train is 0.9571045576407506\
+Accuracy test is 0.61875\'94\
+\
+\
+High test accuracy + train accuracy\
+\
+The hidden node size is 161\
+The hidden layer size is 5\
+Accuracy train is 0.9597855227882037\
+Accuracy test is 0.6416666666666667\
+\
+For 4 layers (alpha 0.0001):\
+best test nodes =158\
+best test accuracy =0.6458333333333334\
+best train nodes =159\
+best train accuracy =0.9526362823949955\
+\
+For 4 layers (alpha 0.001):\
+best test nodes =158\
+best test accuracy =0.6020833333333333\
+best train nodes =158\
+best train accuracy =0.9186773905272565\
+\
+For 4 layers (alpha 0.01):\
+best test nodes =158\
+best test accuracy =0.6375\
+best train nodes =158\
+best train accuracy =0.8838248436103664\
+\
+For 5 layers (alpha 0.001):\
+best test nodes =158\
+best test accuracy =0.5895833333333333\
+best train nodes =158\
+best train accuracy =0.8829311885612153\
+\
+For 5 layers (alpha 0.1):\
+best test nodes =158\
+best test accuracy =0.5791666666666667\
+best train nodes =158\
+best train accuracy =0.6621983914209115\
+\
+FYI: \'91tanh\'92, \'91logistic\'92 = TERRIBLE\
+\
+4 layers seems to be the best for test accuracy\
+\
+For 4 layers, 158 hidden nodes, default alpha, processing data by MinMax and then into Standard Scaler\
+best test nodes =158\
+best test accuracy =0.6104166666666667\
+best train nodes =158\
+best train accuracy =0.9937444146559428\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 For 4 layers, 158 hidden nodes, alpha = 0.001 processing data by MinMax and then into Standard Scaler\
+best test nodes =158\
+best test accuracy =0.6083333333333333\
+best train nodes =158\
+best train accuracy =0.9991063449508489\
+\
+For 4 layers, 158 hidden nodes, alpha = 1 processing data by MinMax and then into Standard Scaler\
+best test nodes =158\
+best test accuracy =0.6354166666666666\
+best train nodes =158\
+best train accuracy =0.9696157283288651\
+\
+For 4 layers, 158 hidden nodes, alpha = 10 processing data by MinMax and then into Standard Scaler\
+best test nodes =158\
+best test accuracy =0.5541666666666667\
+best train nodes =158\
+best train accuracy =0.5889186773905273\
+\
+For 4 layers, 158 hidden nodes, alpha = 1 processing data by MinMax and then into Standard Scaler, using 80/20 train/test split instead of 70/30\
+\pard\pardeftab720\partightenfactor0
+\cf0 best test nodes =158\
+best test accuracy =0.66875\
+best train nodes =158\
+best train accuracy =0.9272869429241595\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 For 4 layers, 158 hidden nodes, alpha = 1 processing data by MinMax and then into Standard Scaler, using 80/20 train/test split instead of 70/30, stratification = y\
+best test nodes =158\
+best test accuracy =0.646875\
+best train nodes =158\
+best train accuracy =0.9272869429241595\
+\
+For 4 layers, 158 hidden nodes, alpha = 1 processing data by MinMax and then into Standard Scaler, using 70/30 train/test split instead of 70/30, stratification = y, dropped \'91fixed acidity\'92\
+best test nodes =158\
+best test accuracy =1.0\
+best train nodes =158\
+best train accuracy =1.0 (what?)\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 For 4 layers, 158 hidden nodes, alpha = 10 processing data by MinMax and then into Standard Scaler, using 70/30 train/test split instead of 70/30, stratification = y, dropped \'91fixed acidity\'92\
+best test nodes =158\
+best test accuracy =0.95\
+best train nodes =158\
+best train accuracy =0.9490616621983914\
+\
+Changing random_state from 42 to 30 did not change anything\
+\
+We realized that when we were dropping columns earlier, we included the quality column, artificially giving us amazing accuracy\
+\
+For 4 layers, 158 hidden nodes, alpha = 1 processing data by MinMax and then into Standard Scaler, using 70/30 train/test split instead of 70/30, stratification = y, dropped \'91fixed acidity\'92, dropped \'91quality\'92\
+best test nodes =158\
+best test accuracy =0.66875\
+best train nodes =158\
+best train accuracy =0.9070598748882931\
+\
+For 4 layers, 158 hidden nodes, alpha = 1 processing data by MinMax and then into Standard Scaler, using 70/30 train/test split instead of 70/30, stratification = y, dropped \'91residual sugar\'92, \'91quality\
+\pard\pardeftab720\partightenfactor0
+\cf0 best test nodes =158\
+best test accuracy =0.6458333333333334\
+best train nodes =158\
+best train accuracy =0.8668453976764968\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 For 4 layers, 158 hidden nodes, alpha = 1 processing data by MinMax and then into Standard Scaler, using 70/30 train/test split instead of 70/30, stratification = y, dropped \'91residual sugar\'92,\'92fixed acidity\'92 \'91quality\
+best test nodes =158\
+best test accuracy =0.6208333333333333\
+best train nodes =158\
+best train accuracy =0.8757819481680071\
+\
+For 4 layers, 158 hidden nodes, alpha = 1 processing data by MinMax and then into Standard Scaler, using 70/30 train/test split instead of 70/30, stratification = y, dropped \'91density\'92,\'92fixed acidity\'92 \'91quality\
+\pard\pardeftab720\partightenfactor0
+\cf0 best test nodes =158\
+best test accuracy =0.6708333333333333\
+best train nodes =158\
+best train accuracy =0.9311885612153709\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 For 4 layers, 158 hidden nodes, alpha = 1 processing data by MinMax and then into Standard Scaler, using 80/20 train/test split instead of 70/30, stratification = y, dropped \'91density\'92,\'92fixed acidity\'92 \'91quality\
+\pard\pardeftab720\partightenfactor0
+\cf0 best test nodes =158\
+best test accuracy =0.665625\
+best train nodes =158\
+best train accuracy =0.9030492572322126\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 For 4 layers, 158 hidden nodes, alpha = 1 processing data by MinMax and then into Standard Scaler, using 60/40 train/test split instead of 70/30, stratification = y, dropped \'91density\'92,\'92fixed acidity\'92 \'91quality\
+\pard\pardeftab720\partightenfactor0
+\cf0 best test nodes =158\
+best test accuracy =0.6234375\
+best train nodes =158\
+best train accuracy =0.9520333680917622}
